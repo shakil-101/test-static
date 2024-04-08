@@ -1,3 +1,4 @@
+"use client";
 export default function Success() {
   return (
     <main className="flex min-h-screen">
