@@ -34,19 +34,16 @@ export default function Home() {
         </div>
       </div>
 
-      <form name="contact" action="/success" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
+      <form name="contact" netlify>
         <p>
-          <label htmlFor="yourname">Your Name:</label> <br />
-          <input type="text" name="name" id="yourname" />
+          <label>
+            Name <input type="text" name="name" />
+          </label>
         </p>
         <p>
-          <label htmlFor="youremail">Your Email:</label> <br />
-          <input type="email" name="email" id="youremail" />
-        </p>
-        <p>
-          <label htmlFor="yourmessage">Message:</label> <br />
-          <textarea name="message" id="yourmessage"></textarea>
+          <label>
+            Email <input type="email" name="email" />
+          </label>
         </p>
         <p>
           <button type="submit">Send</button>
